@@ -43,12 +43,12 @@ public:
 
     void switchToPrevTab() {
         if (!head || head == tail) {
-            std::cout << "No previous tab" << std::endl;
+            std::cout << "No previous tab\n" << std::endl;
             return;
         }
         if (tail == head->next) {
             head = tail;
-            std::cout << "Switched to previous tab = " << head->name << std::endl;
+            std::cout << "Switched to previous tab = " << head->name << "\n" << std::endl;
             return;
         }
         Tab<T>* temp = head;
@@ -57,7 +57,7 @@ public:
         }
         tail = temp;
         head = temp->next;
-        std::cout << "Switched to previous tab = " << head->name << std::endl;
+        std::cout << "Switched to previous tab = " << head->name << "\n" << std::endl;
     }
 
     void switchToNextTab() {
