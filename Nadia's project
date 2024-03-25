@@ -220,6 +220,6 @@ int main() {
     b1.showBookmarkTab();
     b1.total_memory();
     b1.deleteTab();
-    b1.display();*/
+    b1.display();
     return 0;
 }
